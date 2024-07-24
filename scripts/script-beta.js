@@ -34,6 +34,12 @@ const sainsburysIcon = L.icon({
     iconAnchor: [18, 47], 
     popupAnchor: [1, -60]
 });
+const bandmIcon = L.icon({
+    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/bandm.png',
+    iconSize: [37, 47],
+    iconAnchor: [18, 47], 
+    popupAnchor: [1, -60]
+});
 
 
 function initialisation() {
@@ -62,9 +68,58 @@ const companies = {
       sainsburys: {
         hiring: `<a href="https://sainsburys.jobs/">Sainsbury's Careers</a>`,
         banner: `https://i.imgur.com/UDYui2C.png`
+      },
+      bandm: {
+        hiring: `<a href="https://careers.bmstores.co.uk/">B&M Careers</a>`,
+        banner: `https://i.imgur.com/EoO0LQJ.png`
       }
     }
 const details = [
+           {
+      description: '<b>B&M - Distribution Centre (Middlewich)</b>',
+      icon: bandmIcon,
+      address: 'Pochin Way<br>Middlewich<br>CW10 0TE',
+      hiring: companies.bandm.hiring,
+      banner: companies.bandm.banner,
+      latitude: 53.1895168,
+      longitude: -2.4272939
+    }, 
+           {
+      description: '<b>B&M - Distribution Centre (Runcorn)</b>',
+      icon: bandmIcon,
+      address: 'Blackheath Ln<br>Runcorn<br>WA7 1SE',
+      hiring: companies.bandm.hiring,
+      banner: companies.bandm.banner,
+      latitude: 53.3540965, 
+      longitude: -2.6516231
+    },            
+    {
+      description: '<b>B&M - Distribution Centre (The Qube)</b>',
+      icon: bandmIcon,
+      address: 'Estuary Commerce Park, Dakota Dr<br>Liverpool<br>L24 8RJ',
+      hiring: companies.bandm.hiring,
+      banner: companies.bandm.banner,
+      latitude: 53.3418305,
+      longitude: -2.8841428
+    },     
+    {
+      description: '<b>B&M - Distribution Centre (Knowsley)</b>',
+      icon: bandmIcon,
+      address: 'Moorgate Road South<br>Deacon Park<br>Liverpool<br>L33 7RX',
+      hiring: companies.bandm.hiring,
+      banner: companies.bandm.banner,
+      latitude: 53.4724435,
+      longitude: -2.8658575
+    },     
+    {
+      description: '<b>B&M - Distribution Centre (Bedford)</b>',
+      icon: bandmIcon,
+      address: 'Zander Wy<br>Wixams, Bedford<br>MK42 6EY',
+      hiring: companies.bandm.hiring,
+      banner: companies.bandm.banner,
+      latitude: 52.0953703, 
+      longitude: -0.4798814
+    }, 
     {
       description: '<b>The Range - Distribution Centre (Doncaster)</b>',
       icon: theRangeIcon,
