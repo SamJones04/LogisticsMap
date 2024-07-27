@@ -1,79 +1,89 @@
 const theRangeIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/the-range.png',
-    iconSize:     [37, 47],
-    iconAnchor: [18, 47], 
-    popupAnchor:  [1, -60]
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/the-range.png",
+    iconSize: [37, 47],
+    iconAnchor: [18, 47],
+    popupAnchor: [1, -60]
 });
 const menziesIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/menzies.png',
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/menzies.png",
     iconSize: [37, 47],
-    iconAnchor: [18, 47], 
+    iconAnchor: [18, 47],
     popupAnchor: [1, -60]
 });
 const morrisonsIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/morrisons.png',
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/morrisons.png",
     iconSize: [37, 47],
-    iconAnchor: [18, 47], 
+    iconAnchor: [18, 47],
     popupAnchor: [1, -60]
 });
 const asdaIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/asda.png',
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/asda.png",
     iconSize: [37, 47],
-    iconAnchor: [18, 47], 
+    iconAnchor: [18, 47],
     popupAnchor: [1, -60]
 });
 const tescoIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/tesco.png',
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/tesco.png",
     iconSize: [37, 47],
-    iconAnchor: [18, 47], 
+    iconAnchor: [18, 47],
     popupAnchor: [1, -60]
 });
 const sainsburysIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/sainsburys.png',
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/sainsburys.png",
     iconSize: [37, 47],
-    iconAnchor: [18, 47], 
+    iconAnchor: [18, 47],
     popupAnchor: [1, -60]
 });
 const bandmIcon = L.icon({
-    iconUrl: 'https://SamJones04.GitHub.io/LogisticsMap/beta/icons/bandm.png',
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/bandm.png",
     iconSize: [37, 47],
-    iconAnchor: [18, 47], 
+    iconAnchor: [18, 47],
+    popupAnchor: [1, -60]
+});
+const sportsDirectIcon = L.icon({
+    iconUrl: "https://SamJones04.GitHub.io/LogisticsMap/beta/icons/sports-direct.png",
+    iconSize: [37, 47],
+    iconAnchor: [18, 47],
     popupAnchor: [1, -60]
 });
 
 
 function initialisation() {
- 
-const companies = {
-      menzies: {
-        hiring: `<a href="https://www.menziesdistribution.com/about/working-for-menzies/">Menzies Careers</a>`,
-        banner: 'https://i.imgur.com/yDg0Zd3.png'
-      },
-      theRange: {
-        hiring: `<a href="https://www.therange.co.uk/careers/">The Range Careers</a>`,
-        banner: 'https://i.imgur.com/K8Bj2To.png'
-      },
-      morrisons: {
-        hiring: `<a href="https://www.morrisons.jobs/">Morrisons Careers</a>`,
-        banner: 'https://i.imgur.com/7f4UZ6E.png'
-      },
-      tesco: {
-        hiring: `<a href="https://www.tesco-careers.com/">Tesco Careers</a>`,
-        banner: 'https://i.imgur.com/EwW5WzB.png'
-      },
-      asda: {
-        hiring: `<a href="https://www.asda.jobs/">ASDA Careers</a>`,
-        banner: 'https://i.imgur.com/zkwblqZ.png'
-      },
-      sainsburys: {
-        hiring: `<a href="https://sainsburys.jobs/">Sainsbury's Careers</a>`,
-        banner: `https://i.imgur.com/UDYui2C.png`
-      },
-      bandm: {
-        hiring: `<a href="https://careers.bmstores.co.uk/">B&M Careers</a>`,
-        banner: `https://i.imgur.com/EoO0LQJ.png`
-      }
-    }
+    const companies = {
+        menzies: {
+            hiring: `<a href="https://www.menziesdistribution.com/about/working-for-menzies/">Menzies Careers</a>`,
+            banner: "https://i.imgur.com/yDg0Zd3.png"
+        },
+        theRange: {
+            hiring: `<a href="https://www.therange.co.uk/careers/">The Range Careers</a>`,
+            banner: "https://i.imgur.com/K8Bj2To.png"
+        },
+        morrisons: {
+            hiring: `<a href="https://www.morrisons.jobs/">Morrisons Careers</a>`,
+            banner: "https://i.imgur.com/7f4UZ6E.png"
+        },
+        tesco: {
+            hiring: `<a href="https://www.tesco-careers.com/">Tesco Careers</a>`,
+            banner: "https://i.imgur.com/EwW5WzB.png"
+        },
+        asda: {
+            hiring: `<a href="https://www.asda.jobs/">ASDA Careers</a>`,
+            banner: "https://i.imgur.com/zkwblqZ.png"
+        },
+        sainsburys: {
+            hiring: `<a href="https://sainsburys.jobs/">Sainsbury's Careers</a>`,
+            banner: `https://i.imgur.com/UDYui2C.png`
+        },
+        bandm: {
+            hiring: `<a href="https://careers.bmstores.co.uk/">B&M Careers</a>`,
+            banner: `https://i.imgur.com/EoO0LQJ.png`
+        },
+        sportsDirect: {
+            hiring: `<a href="https://frasers.group/careers/jobs">Sports Direct Careers</a>`,
+            banner: `https://i.imgur.com/lVU8Dvw.png`
+        }
+    };
+    
 const details = [
         {
             description:
@@ -974,8 +984,7 @@ initialisation()
 
 
 function load(details, companies) {
-
-      let currentURL = window.location.href.toLowerCase();
+    let currentURL = window.location.href.toLowerCase();
 
     console.log(
         `%cTotal Locations on Map: ` + `%c${details.length}`,
@@ -1025,55 +1034,52 @@ function load(details, companies) {
         attribution:
             '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-  
-  
-  
 }
 
+function count(details) {
+    let list = [];
 
-/* Locations Count:
+    details.forEach(details => {
+        let menziesCount = [];
+        let asdaCount = [];
+        let tescoCount = [];
+        let morrisonsCount = [];
+        let sainsburysCount = [];
+        let rangeCount = [];
+        let bandmCount = [];
 
-## TOP OF LOAD function
+        let exm = details.description.slice(3);
+        let exm2 = exm.substring(0, exm.length - 4);
+        list.push(exm2);
 
-let menziesCount = []
-let asdaCount = []
-let tescoCount = []
-let morrisonsCount = []
-let sainsburysCount = []
-let rangeCount = []
+        console.log(exm2);
 
-## SWITCH INSIDE FOREACH
+        switch (details.icon) {
+            case menziesIcon: // Menzies
+                menziesCount.push(details.description);
+                break;
+            case theRangeIcon:
+                rangeCount.push(details.description);
+                break;
+            case morrisonsIcon:
+                morrisonsCount.push(details.description);
+                break;
+            case asdaIcon:
+                asdaCount.push(details.description);
+                break;
+            case sainsburysIcon:
+                sainsburysCount.push(details.description);
+                break;
+            case tescoIcon:
+                tescoCount.push(details.description);
+                break;
+            case bandmIcon:
+                bandmCount.push(details.description);
+                break;
+            default:
+                console.log(`ERROR:\n\n${details}.`);
+        }
+    });
 
-switch (details.banner) {
-  case 'https://i.imgur.com/yDg0Zd3.png': // Menzies
-    console.log(details.description)
-    menziesCount.push(details.description)
-    break;
-  case 'https://i.imgur.com/K8Bj2To.png':
-    rangeCount.push('a')
-    break;
-  case 'https://i.imgur.com/7f4UZ6E.png':
-    morrisonsCount.push('a')
-    break;
-  case 'https://i.imgur.com/zkwblqZ.png':
-    asdaCount.push('a')
-    break;
-    case 'https://i.imgur.com/UDYui2C.png':
-    sainsburysCount.push('a')
-    break;
-    case 'https://i.imgur.com/EwW5WzB.png':
-    tescoCount.push('a')
-    break;
-  default:
-    console.log(`ERROR:\n\n${details}.`);
+    console.log(list);
 }
-
-## RESULT
-
-console.log(`TESCO: ${tescoCount.length}`)
-console.log(`ASDA: ${asdaCount.length}`)
-console.log(`MENZIES: ${menziesCount.length}`)
-console.log(`SAINSBURYS: ${sainsburysCount.length}`)
-console.log(`THE RANGE: ${rangeCount.length}`)
-console.log(`MORRISONS: ${morrisonsCount.length}`)
-*/
