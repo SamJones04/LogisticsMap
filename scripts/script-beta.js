@@ -83,18 +83,19 @@ function initialisation() {
             banner: `https://i.imgur.com/lVU8Dvw.png`
         }
     };
-    
-const details = [
+
+
+        const details = [
         {
             description:
                 "<b>Sports Direct - Distribution Centre (Gainsborough)</b>",
             icon: sportsDirectIcon,
             address: "B1400, Kirton in Lindsey<br>Gainsborough<br>DN21",
+            id: "SD-Gainsborough",
+
             hiring: companies.sportsDirect.hiring,
             banner: companies.sportsDirect.banner,
-            id: "SD-Gainsborough",
-            latitude: 53.4662389,
-            longitude: -0.5772392
+            latLong: [53.4662389, -0.5772392]
         },
         {
             description:
@@ -105,8 +106,7 @@ const details = [
             id: "SD-Mansfield",
             hiring: companies.sportsDirect.hiring,
             banner: companies.sportsDirect.banner,
-            latitude: 53.196623,
-            longitude: -1.2046009
+            latLong: [53.196623, -1.2046009]
         },
         {
             description: "<b>B&M - Distribution Centre (Middlewich)</b>",
@@ -115,8 +115,7 @@ const details = [
             id: "BANDM-Middlewich",
             hiring: companies.bandm.hiring,
             banner: companies.bandm.banner,
-            latitude: 53.1895168,
-            longitude: -2.4272939
+            latLong: [53.1895168, -2.4272939]
         },
         {
             description: "<b>B&M - Distribution Centre (Runcorn)</b>",
@@ -125,8 +124,7 @@ const details = [
             id: "BANDM-Runcorn",
             hiring: companies.bandm.hiring,
             banner: companies.bandm.banner,
-            latitude: 53.3540965,
-            longitude: -2.6516231
+            latLong: [53.3540965, -2.6516231]
         },
         {
             description: "<b>B&M - Distribution Centre (The Qube)</b>",
@@ -135,8 +133,7 @@ const details = [
             id: "BANDM-Qube",
             hiring: companies.bandm.hiring,
             banner: companies.bandm.banner,
-            latitude: 53.3418305,
-            longitude: -2.8841428
+            latLong: [53.3418305, -2.8841428]
         },
         {
             description: "<b>B&M - Distribution Centre (Knowsley)</b>",
@@ -146,8 +143,7 @@ const details = [
             id: "BANDM-Knowsley",
             hiring: companies.bandm.hiring,
             banner: companies.bandm.banner,
-            latitude: 53.4724435,
-            longitude: -2.8658575
+            latLong: [53.4724435, -2.8658575]
         },
         {
             description: "<b>B&M - Distribution Centre (Bedford)</b>",
@@ -156,8 +152,7 @@ const details = [
             id: "BANDM-Bedford",
             hiring: companies.bandm.hiring,
             banner: companies.bandm.banner,
-            latitude: 52.0953703,
-            longitude: -0.4798814
+            latLong: [52.0953703, -0.4798814]
         },
         {
             description: "<b>The Range - Distribution Centre (Doncaster)</b>",
@@ -166,8 +161,7 @@ const details = [
             id: "Range-Doncaster",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 53.6262694,
-            longitude: -0.9659708
+            latLong: [53.6262694, -0.9659708]
         },
         {
             description: "<b>The Range - Distribution Centre (Bristol)</b>",
@@ -176,8 +170,7 @@ const details = [
             id: "Range-Bristol",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 51.5392529,
-            longitude: -2.6526772
+            latLong: [51.5392529, -2.6526772]
         },
         {
             description: "<b>The Range - Distribution Centre (Rugby)</b>",
@@ -186,8 +179,7 @@ const details = [
             id: "Range-Rugby",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 52.39969949,
-            longitude: -1.2650994
+            latLong: [52.39969949, -1.2650994]
         },
         {
             description: "<b>The Range - Distribution Centre (Stowmarket)</b>",
@@ -196,8 +188,7 @@ const details = [
             id: "Range-Stowmarket",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 52.1782093,
-            longitude: 1.0201366
+            latLong: [52.1782093, 1.0201366]
         },
         {
             description: "<b>The Range - Distribution Centre (Stafford)</b>",
@@ -207,8 +198,7 @@ const details = [
             id: "Range-Stafford",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 52.7679168,
-            longitude: -2.1100154
+            latLong: [52.7679168, -2.1100154]
         },
         {
             description: "<b>The Range - Distribution Centre (Mitcheldean)</b>",
@@ -218,8 +208,7 @@ const details = [
             id: "Range-Mitcheldean",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 51.8686727,
-            longitude: -2.4840853
+            latLong: [51.8686727, -2.4840853]
         },
         {
             description: "<b>The Range - Distribution Centre (Wakefield)</b>",
@@ -228,8 +217,7 @@ const details = [
             id: "Ranfe-Wakefield",
             hiring: companies.theRange.hiring,
             banner: companies.theRange.banner,
-            latitude: 53.7051214,
-            longitude: -1.3801595
+            latLong: [53.7051214, -1.3801595]
         },
         {
             description: "<b>Menzies Distribution (Biggleswade)</b>",
@@ -238,10 +226,9 @@ const details = [
             id: "Menzies-Biggleswade",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 52.0700718,
-            longitude: -0.233318
+            latLong: [52.0700718, -0.233318]
         },
-    {
+        {
             description: "<b>Menzies Distribution (Stockton)</b>",
             icon: menziesIcon,
             address:
@@ -249,8 +236,7 @@ const details = [
             id: "Menzies-Stockton",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 54.5405555,
-            longitude: -1.3245348
+            latLong: [54.5405555, -1.3245348]
         },
         {
             description: "<b>Menzies Distribution (York)</b>",
@@ -259,8 +245,7 @@ const details = [
             id: "Menzies-York",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.9871214,
-            longitude: -1.0996252
+            latLong: [53.9871214, -1.0996252]
         },
         {
             description: "<b>Menzies Distribution (Kendal)</b>",
@@ -270,8 +255,7 @@ const details = [
             id: "Menzies-Kendal",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 54.3458577,
-            longitude: -2.7403194
+            latLong: [54.3458577, -2.7403194]
         },
         {
             description: "<b>Menzies Distribution (Carlisle)</b>",
@@ -280,8 +264,7 @@ const details = [
             id: "Menzies-Carlisle",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 54.897039,
-            longitude: -2.952977
+            latLong: [54.897039, -2.952977]
         },
         {
             description: "<b>Menzies Distribution (Inverness)</b>",
@@ -290,8 +273,7 @@ const details = [
             id: "Menzies-Inverness",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 57.4834776,
-            longitude: -4.2169549
+            latLong: [57.4834776, -4.2169549]
         },
         {
             description: "<b>Menzies Distribution (Aberdeen)</b>",
@@ -300,8 +282,7 @@ const details = [
             id: "Menzies-Aberdeen",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 57.1283623,
-            longitude: -2.0934118
+            latLong: [57.1283623, -2.0934118]
         },
         {
             description: "<b>Menzies Distribution (Dundee)</b>",
@@ -310,8 +291,7 @@ const details = [
             id: "Menzies-Dundee",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 56.4781268,
-            longitude: -3.0526352
+            latLong: [56.4781268, -3.0526352]
         },
         {
             description: "<b>Menzies Distribution (Newbridge)</b>",
@@ -320,8 +300,7 @@ const details = [
             id: "Menzies-Newbridge",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 55.9276228,
-            longitude: -3.4131566
+            latLong: [55.9276228, -3.4131566]
         },
         {
             description: "<b>Menzies Distribution (Hamilton)</b>",
@@ -330,8 +309,7 @@ const details = [
             id: "Menzies-Hamilton",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 55.7882454,
-            longitude: -4.0686905
+            latLong: [55.7882454, -4.0686905]
         },
         {
             description: "<b>Menzies Distribution (East Kilbride)</b>",
@@ -340,8 +318,7 @@ const details = [
             id: "Menzies-Kilbride",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 55.7676353,
-            longitude: -4.2037632
+            latLong: [55.7676353, -4.2037632]
         },
         {
             description: "<b>Menzies Distribution (Linwood)</b>",
@@ -350,8 +327,7 @@ const details = [
             id: "Menzies-Linwood",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 55.8407886,
-            longitude: -4.4772958
+            latLong: [55.8407886, -4.4772958]
         },
         {
             description: "<b>Menzies Distribution (Hull)</b>",
@@ -360,8 +336,7 @@ const details = [
             id: "Menzies-Hull",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.751502,
-            longitude: -0.2761435
+            latLong: [53.751502, -0.2761435]
         },
         {
             description: "<b>Menzies Distribution (Wakefield)</b>",
@@ -370,8 +345,7 @@ const details = [
             id: "Menzies-Wakefield",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.7145041,
-            longitude: -1.5232972
+            latLong: [53.7145041, -1.5232972]
         },
         {
             description: "<b>Menzies Distribution (Preston)</b>",
@@ -380,8 +354,7 @@ const details = [
             id: "Menzies-Preston",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.7824483,
-            longitude: -2.6485409
+            latLong: [53.7824483, -2.6485409]
         },
         {
             description: "<b>Menzies Distribution (Sheffield)</b>",
@@ -390,8 +363,7 @@ const details = [
             id: "Menzies-Sheffield",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.3999427,
-            longitude: -1.4058024
+            latLong: [53.3999427, -1.4058024]
         },
         {
             description: "<b>Menzies Distribution (Chester)</b>",
@@ -400,8 +372,7 @@ const details = [
             id: "Menzies-Chester",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.2667694,
-            longitude: -2.876013
+            latLong: [53.2667694, -2.876013]
         },
         {
             description: "<b>Menzies Distribution (Rhyl)</b>",
@@ -411,8 +382,7 @@ const details = [
             id: "Menzies-Rhyl",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 53.263444,
-            longitude: -3.5060975
+            latLong: [53.263444, -3.5060975]
         },
         {
             description: "<b>Menzies Distribution (Swansea)</b>",
@@ -422,8 +392,7 @@ const details = [
             id: "Menzies-Swansea",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.673742,
-            longitude: -3.9043468
+            latLong: [51.673742, -3.9043468]
         },
         {
             description: "<b>Menzies Distribution (Coventry)</b>",
@@ -432,18 +401,16 @@ const details = [
             id: "Menzies-Coventry",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 52.3663821,
-            longitude: -1.4762131
+            latLong: [52.3663821, -1.4762131]
         },
-     {
+        {
             description: "<b>Menzies Distribution (Norwich)</b>",
             icon: menziesIcon,
             address: "Norwich<br>NR7 0WH",
             id: "Menzies-Norwich",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 52.6319504,
-            longitude: -1.37283
+            latLong: [52.6319504, -1.37283]
         },
         {
             description: "<b>Menzies Distribution (Cullompton)</b>",
@@ -452,8 +419,7 @@ const details = [
             id: "Menzies-Cullompton",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 50.8590791,
-            longitude: -3.3855794
+            latLong: [50.8590791, -3.3855794]
         },
         {
             description: "<b>Menzies Distribution (Camberley)</b>",
@@ -462,8 +428,7 @@ const details = [
             id: "Menzies-Camberley",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.3161835,
-            longitude: -0.7521866
+            latLong: [51.3161835, -0.7521866]
         },
         {
             description: "<b>Menzies Distribution (SEL)</b>",
@@ -472,8 +437,7 @@ const details = [
             id: "Menzies-SEL",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.4912,
-            longitude: 0.0111077
+            latLong: [51.4912, 0.0111077]
         },
         {
             description: "<b>Menzies Distribution (Bow)</b>",
@@ -482,8 +446,7 @@ const details = [
             id: "Menzies-Bow",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.5223103,
-            longitude: -0.0030896
+            latLong: [51.5223103, -0.0030896]
         },
         {
             description: "<b>Menzies Distribution (Grays)</b>",
@@ -492,8 +455,7 @@ const details = [
             id: "Menzies-Grays",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.4696362,
-            longitude: 0.2713929
+            latLong: [51.4696362, 0.2713929]
         },
         {
             description: "<b>Menzies Distribution (Maidstone)</b>",
@@ -502,8 +464,7 @@ const details = [
             id: "Menzies-Maidstone",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.3148776,
-            longitude: 0.4513092
+            latLong: [51.3148776, 0.4513092]
         },
         {
             description: "<b>Menzies Distribution (Ipswich)</b>",
@@ -512,8 +473,7 @@ const details = [
             id: "Menzies-Ipswich",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 52.0282077,
-            longitude: 1.2121466
+            latLong: [52.0282077, 1.2121466]
         },
         {
             description: "<b>Menzies Distribution (Ashford)</b>",
@@ -522,8 +482,7 @@ const details = [
             id: "Menzies-Ashford",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.1290859,
-            longitude: 0.8933436
+            latLong: [51.1290859, 0.8933436]
         },
         {
             description: "<b>Menzies Distribution (Eastbourne)</b>",
@@ -532,8 +491,7 @@ const details = [
             id: "Menzies-Eastbourne",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 50.7922351,
-            longitude: 0.2834491
+            latLong: [50.7922351, 0.2834491]
         },
         {
             description: "<b>Menzies Distribution (Portsmouth)</b>",
@@ -542,8 +500,7 @@ const details = [
             id: "Menzies-Portsmouth",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 50.8367152,
-            longitude: -1.0445883
+            latLong: [50.8367152, -1.0445883]
         },
         {
             description: "<b>Menzies Distribution (Ryde)</b>",
@@ -552,8 +509,7 @@ const details = [
             id: "Menzies-Ryde",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 50.7177224,
-            longitude: -1.1566671
+            latLong: [50.7177224, -1.1566671]
         },
         {
             description: "<b>Menzies Distribution (Heathrow)</b>",
@@ -562,8 +518,7 @@ const details = [
             id: "Menzies-Heathrow",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 51.4689098,
-            longitude: -0.4062997
+            latLong: [51.4689098, -0.4062997]
         },
         {
             description: "<b>Menzies Distribution (Valor Park)</b>",
@@ -572,8 +527,7 @@ const details = [
             id: "Menzies-ValorPark",
             hiring: companies.menzies.hiring,
             banner: companies.menzies.banner,
-            latitude: 52.0116835,
-            longitude: -0.7299233
+            latLong: [52.0116835, -0.7299233]
         },
         {
             description: "<b>Morrisons Distribution Centre (Stockton)</b>",
@@ -582,8 +536,7 @@ const details = [
             id: "Morrisons-Stockton",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 54.5678251,
-            longitude: -1.2961916
+            latLong: [54.5678251, -1.2961916]
         },
         {
             description: "<b>Morrisons Distribution Centre (Sittingbourne)</b>",
@@ -592,8 +545,7 @@ const details = [
             id: "Morrisons-Sittingbourne",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 51.3712529,
-            longitude: 0.7451217
+            latLong: [51.3712529, 0.7451217]
         },
         {
             description: "<b>Morrisons Distribution Centre (Wakefield J41)</b>",
@@ -602,8 +554,7 @@ const details = [
             id: "Morrisons-Wakefield",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 53.7130179,
-            longitude: -1.5137985
+            latLong: [53.7130179, -1.5137985]
         },
         {
             description: "<b>Morrisons Distribution Centre (Kettering)</b>",
@@ -612,8 +563,7 @@ const details = [
             id: "Morrisons-Kettering",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 52.3696604,
-            longitude: -0.6901384
+            latLong: [52.3696604, -0.6901384]
         },
         {
             description: "<b>Morrisons Distribution Centre (Gadbrook)</b>",
@@ -622,8 +572,7 @@ const details = [
             id: "Morrisons-Gadbrook",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 53.247348,
-            longitude: -2.4751157
+            latLong: [53.247348, -2.4751157]
         },
         {
             description: "<b>Morrisons Distribution Centre (Swan Valley)</b>",
@@ -632,8 +581,7 @@ const details = [
             id: "Morrisons-SwanValley",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 52.2124595,
-            longitude: -0.9482554
+            latLong: [52.2124595, -0.9482554]
         },
         {
             description: "<b>Morrisons Distribution Centre (Willow Green)</b>",
@@ -642,8 +590,7 @@ const details = [
             id: "Morrisons-WillowGreen",
             hiring: companies.morrisons.hiring,
             banner: companies.morrisons.banner,
-            latitude: 51.153483,
-            longitude: -2.9845741
+            latLong: [51.153483, -2.9845741]
         },
         {
             description: "<b>TESCO Distribution Centre (Livingston)</b>",
@@ -652,8 +599,7 @@ const details = [
             id: "Tesco-Livingston",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 55.9022613,
-            longitude: -3.5884668
+            latLong: [55.9022613, -3.5884668]
         },
         {
             description: "<b>TESCO Distribution Centre (Middlesbrough)</b>",
@@ -662,8 +608,7 @@ const details = [
             id: "Tesco-Middlesbrough",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 54.609362,
-            longitude: -1.1423123
+            latLong: [54.609362, -1.1423123]
         },
         {
             description: "<b>TESCO Distribution Centre (Oakwood)</b>",
@@ -672,8 +617,7 @@ const details = [
             id: "Tesco-Oakwood",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 53.5575549,
-            longitude: -2.531672
+            latLong: [53.5575549, -2.531672]
         },
         {
             description: "<b>TESCO Distribution Centre (Doncaster)</b>",
@@ -682,8 +626,7 @@ const details = [
             id: "Tesco-Doncaster",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 53.5109118,
-            longitude: -1.1233165
+            latLong: [53.5109118, -1.1233165]
         },
         {
             description: "<b>TESCO Distribution Centre (Widnes)</b>",
@@ -692,8 +635,7 @@ const details = [
             id: "Tesco-Widnes",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 53.3528108,
-            longitude: -2.7436266
+            latLong: [53.3528108, -2.7436266]
         },
         {
             description: "<b>TESCO Distribution Centre (Lichfield)</b>",
@@ -702,8 +644,7 @@ const details = [
             id: "Tesco-Lichfield",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 52.7138951,
-            longitude: -1.791443
+            latLong: [52.7138951, -1.791443]
         },
         {
             description: "<b>TESCO Distribution Centre (Hinckley)</b>",
@@ -712,8 +653,7 @@ const details = [
             id: "Tesco-Hinckley",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 52.5408411,
-            longitude: -1.4092417
+            latLong: [52.5408411, -1.4092417]
         },
         {
             description: "<b>TESCO Distribution Centre (Peterborough)</b>",
@@ -722,8 +662,7 @@ const details = [
             id: "Tesco-Peterborough",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 52.5944943,
-            longitude: -0.1992177
+            latLong: [52.5944943, -0.1992177]
         },
         {
             description: "<b>TESCO Distribution Centre (Kilsby)</b>",
@@ -732,8 +671,7 @@ const details = [
             id: "Tesco-Kilsby",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 52.3543759,
-            longitude: -1.1680541
+            latLong: [52.3543759, -1.1680541]
         },
         {
             description: "<b>TESCO Distribution Centre (Caldicot)</b>",
@@ -742,8 +680,7 @@ const details = [
             id: "Tesco-Caldicot",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.5720355,
-            longitude: -2.8600881
+            latLong: [51.5720355, -2.8600881]
         },
         {
             description: "<b>TESCO Distribution Centre (Avonmouth)</b>",
@@ -752,8 +689,7 @@ const details = [
             id: "Tesco-Avonmouth",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.5548997,
-            longitude: -2.6410703
+            latLong: [51.5548997, -2.6410703]
         },
         {
             description: "<b>TESCO Distribution Centre (Didcot)</b>",
@@ -762,18 +698,16 @@ const details = [
             id: "Tesco-Didcot",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.621474,
-            longitude: -1.249329
+            latLong: [51.621474, -1.249329]
         },
-     {
+        {
             description: "<b>TESCO Distribution Centre (Reading)</b>",
             icon: tescoIcon,
             address: `Basingstoke Rd<br>Reading<br>RG2 0PN`,
             id: "Tesco-Reading",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.4194979,
-            longitude: -0.9800497
+            latLong: [51.4194979, -0.9800497]
         },
         {
             description: "<b>TESCO Distribution Centre (Enfield)</b>",
@@ -782,8 +716,7 @@ const details = [
             id: "Tesco-Enfield",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.6810638,
-            longitude: -0.0306593
+            latLong: [51.6810638, -0.0306593]
         },
         {
             description: "<b>TESCO Distribution Centre (Dagenham)</b>",
@@ -792,8 +725,7 @@ const details = [
             id: "Tesco-Dagenham",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.5218879,
-            longitude: 0.1671834
+            latLong: [51.5218879, 0.1671834]
         },
         {
             description: "<b>TESCO Distribution Centre (Purfleet)</b>",
@@ -802,8 +734,7 @@ const details = [
             id: "Tesco-Purfleet",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.4810045,
-            longitude: 0.2582498
+            latLong: [51.4810045, 0.2582498]
         },
         {
             description: "<b>TESCO Distribution Centre (Snodland)</b>",
@@ -812,8 +743,7 @@ const details = [
             id: "Tesco-Snodland",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 51.3207652,
-            longitude: 0.4313384
+            latLong: [51.3207652, 0.4313384]
         },
         {
             description: "<b>TESCO Distribution Centre (Southampton)</b>",
@@ -822,8 +752,7 @@ const details = [
             id: "Tesco-Southampton",
             hiring: companies.tesco.hiring,
             banner: companies.tesco.banner,
-            latitude: 50.9433019,
-            longitude: -1.4788832
+            latLong: [50.9433019, -1.4788832]
         },
         {
             description: "<b>ASDA Distribution Centre (Middlesbrough)</b>",
@@ -832,8 +761,7 @@ const details = [
             id: "ADDA-Middlesbrough",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 54.6050697,
-            longitude: -1.1372801
+            latLong: [54.6050697, -1.1372801]
         },
         {
             description: "<b>ASDA Distribution Centre (Washington)</b>",
@@ -842,8 +770,7 @@ const details = [
             id: "ASDA-Washington",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 54.9040318,
-            longitude: -1.4840384
+            latLong: [54.9040318, -1.4840384]
         },
         {
             description: "<b>ASDA Distribution Centre (Rochdale)</b>",
@@ -852,8 +779,7 @@ const details = [
             id: "ASDA-Rochdale",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 53.5983958,
-            longitude: -2.1303267
+            latLong: [53.5983958, -2.1303267]
         },
         {
             description: "<b>ASDA Distribution Centre (Wakefield)</b>",
@@ -862,8 +788,7 @@ const details = [
             id: "ASDA-Wakefield",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 53.718785,
-            longitude: -1.4223989
+            latLong: [53.718785, -1.4223989]
         },
         {
             description: "<b>ASDA Distribution Centre (Lymedale)</b>",
@@ -872,8 +797,7 @@ const details = [
             id: "ASDA-Lymedale",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 53.0289178,
-            longitude: -2.251406
+            latLong: [53.0289178, -2.251406]
         },
         {
             description: "<b>ASDA Home Shopping Centre (Nottingham)</b>",
@@ -882,8 +806,7 @@ const details = [
             id: "ASDA-Nottingham",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 53.0089715,
-            longitude: -1.2046501
+            latLong: [53.0089715, -1.2046501]
         },
         {
             description:
@@ -893,8 +816,7 @@ const details = [
             id: "ASDA-Lutterworth",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 52.452694,
-            longitude: -1.2531988
+            latLong: [52.452694, -1.2531988]
         },
         {
             description: "<b>ASDA Distribution Centre (Brackmills)</b>",
@@ -903,8 +825,7 @@ const details = [
             id: "ASDA-Brackmills",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 52.2142488,
-            longitude: -0.8473668
+            latLong: [52.2142488, -0.8473668]
         },
         {
             description: "<b>ASDA Chilled Distribution Centre (Bedford)</b>",
@@ -913,8 +834,7 @@ const details = [
             id: "ASDA-Bedford",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 52.1019425,
-            longitude: -0.5008667
+            latLong: [52.1019425, -0.5008667]
         },
         {
             description: "<b>ASDA Distribution Centre (Chepstow)</b>",
@@ -923,8 +843,7 @@ const details = [
             id: "ASDA-Chepstow",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 51.6135752,
-            longitude: -2.6776479
+            latLong: [51.6135752, -2.6776479]
         },
         {
             description: "<b>ASDA Chilled Distribution Centre (Bristol)</b>",
@@ -933,8 +852,7 @@ const details = [
             id: "ASDA-Bristol",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 51.5131428,
-            longitude: -2.6913017
+            latLong: [51.5131428, -2.6913017]
         },
         {
             description: "<b>ASDA Distribution Centre (Didcot)</b>",
@@ -943,8 +861,7 @@ const details = [
             id: "ASDA-Didcot",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 51.6266172,
-            longitude: -1.2756033
+            latLong: [51.6266172, -1.2756033]
         },
         {
             description: "<b>ASDA Chilled Distribution Centre (Erith)</b>",
@@ -953,8 +870,7 @@ const details = [
             id: "ASDA-Erith",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 51.5027811,
-            longitude: 0.1582604
+            latLong: [51.5027811, 0.1582604]
         },
         {
             description: "<b>ASDA Distribution Centre (XDC)</b>",
@@ -963,8 +879,7 @@ const details = [
             id: "ASDA-XDC",
             hiring: companies.asda.hiring,
             banner: companies.asda.banner,
-            latitude: 51.4985695,
-            longitude: 0.1569384
+            latLong: [51.4985695, 0.1569384]
         },
         {
             description: `<b>Sainsbury's Distribution Centre (Basingstoke)</b>`,
@@ -973,10 +888,12 @@ const details = [
             id: "Sainsburys-Basingstoke",
             hiring: companies.sainsburys.hiring,
             banner: companies.sainsburys.banner,
-            latitude: 51.2695976,
-            longitude: -1.1027316
+            latLong: [51.2695976, -1.1027316]
         }
-];
+    ];
+
+    
+
 
 load(details, companies)
 }
@@ -997,7 +914,7 @@ function load(details, companies) {
 
     details.forEach(
         details => {
-            let mark = L.marker([details.latitude, details.longitude], {
+            let mark = L.marker([details.latLong[0], details.latLong[1]], {
                 icon: details.icon
             }).addTo(map);
 
@@ -1017,7 +934,7 @@ function load(details, companies) {
             let idToBeChecked = dt.id.toLowerCase();
 
             if (idToBeChecked === searchTerm[1]) {
-                map.setView([dt.latitude, dt.longitude], 15);
+                map.setView([dt.latLong[0], dt.latLong[1]], 15);
             }
         });
     }
