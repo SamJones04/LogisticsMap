@@ -37,7 +37,7 @@
 ## Menzies-Carlisle
 [Click me to Find on Map](https://SamJones04.GitHub.io/LogisticsMap/beta/?locate=Menzies-Carlisle)
 ## Menzies-Inverness
-[Click me to Find on Map][Click me to Find on Map](https://SamJones04.GitHub.io/LogisticsMap/beta/?locate=Menzies-Ryde)
+[Click me to Find on Map](https://SamJones04.GitHub.io/LogisticsMap/beta/?locate=Menzies-Ryde)
 ## Menzies-Heathrow
 [Click me to Find on Map](https://SamJones04.GitHub.io/LogisticsMap/beta/?locate=Menzies-Heathrow)
 ## Menzies-ValorPark
